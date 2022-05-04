@@ -141,6 +141,7 @@ img {
     font-family: $font-title;
     font-weight: $font-bold;
     color: $white-color;
+    transition: $transition-400;
 
     &-icon {
       width: 50px;
@@ -199,12 +200,24 @@ img {
     font-size: 1.5rem;
     color: $white-color;
     cursor: pointer;
+    transition: $transition-400;
   }
 
   // show menu
   .show-menu {
     opacity: 1;
     transform: scaleY(1);
+  }
+
+  // sticky header
+  &.sticky-action {
+    background-color: $white-color;
+    box-shadow: 0 2px 12px rgba($color: #000000, $alpha: 0.1);
+
+    .header__logo,
+    .header__toggle {
+      color: $black-color;
+    }
   }
 }
 
