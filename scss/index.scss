@@ -282,10 +282,10 @@ img {
 
 // ===== FEATURE SECTION =====
 .feature {
+  background-color: #f8f8f8;
+  padding: 4rem 0;
+
   &__group {
-    padding: 4rem 1.5rem;
-    background-color: #f8f8f8;
-    border-radius: 2rem;
     gap: 10rem;
   }
 
