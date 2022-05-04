@@ -245,3 +245,24 @@ img {
     justify-self: center;
   }
 }
+
+// ===== PARTNER SECTION =====
+.partner {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__group {
+    justify-content: center;
+    grid-template-columns: repeat(2, max-content);
+    gap: 1rem;
+  }
+
+  &__img {
+    width: 150px;
+  }
+}
