@@ -266,3 +266,47 @@ img {
     width: 150px;
   }
 }
+
+// ===== FEATURE SECTION =====
+.feature {
+  &__group {
+    padding: 4rem 1.5rem;
+    background-color: #f8f8f8;
+    border-radius: 2rem;
+    gap: 10rem;
+  }
+
+  &__content {
+    gap: 3rem;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    &-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: $grey-color;
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1rem;
+      padding: 0.2rem;
+      background-color: $blue-color;
+      border-radius: 50%;
+      color: $white-color;
+    }
+
+    &-img {
+      justify-self: center;
+    }
+  }
+
+  &__content:nth-child(2) .feature__content-icon {
+    background-color: $yellow-color;
+  }
+}
