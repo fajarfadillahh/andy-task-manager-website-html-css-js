@@ -86,7 +86,7 @@ img {
   padding: 8rem 0 4rem;
 
   &-title {
-    font-size: 24px;
+    font-size: 28px;
     font-family: $font-title;
     font-weight: $font-bold;
     color: $black-color;
@@ -95,7 +95,6 @@ img {
   }
 
   &-text {
-    font-size: 15px;
     font-weight: $font-reguler;
     color: $grey-color;
     line-height: $leading-text;
@@ -141,7 +140,7 @@ img {
     font-size: 20px;
     font-family: $font-title;
     font-weight: $font-bold;
-    color: $black-color;
+    color: $white-color;
 
     &-icon {
       width: 50px;
@@ -175,7 +174,6 @@ img {
   }
 
   &__link {
-    font-size: 15px;
     color: $black-color;
 
     &.active-link {
@@ -191,7 +189,6 @@ img {
     padding: 1rem 2rem;
     background-color: $yellow-color;
     border-radius: 1rem;
-    font-size: 15px;
     font-weight: $font-medium;
     color: $white-color;
     margin-top: $margin-1-5;
@@ -200,7 +197,7 @@ img {
   &__toggle {
     display: inline-flex;
     font-size: 1.5rem;
-    color: $black-color;
+    color: $white-color;
     cursor: pointer;
   }
 
@@ -208,5 +205,43 @@ img {
   .show-menu {
     opacity: 1;
     transform: scaleY(1);
+  }
+}
+
+// ===== HOME SECTION =====
+.home {
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    border-radius: 0 0 2rem 2rem;
+    top: 0;
+    left: 0;
+    z-index: $z-back;
+  }
+
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title,
+  &__text {
+    color: $white-color;
+  }
+
+  &__buttons {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__img {
+    justify-self: center;
   }
 }
