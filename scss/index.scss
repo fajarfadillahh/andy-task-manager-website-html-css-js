@@ -282,19 +282,22 @@ img {
 
 // ===== FEATURE SECTION =====
 .feature {
-  background-color: #f8f8f8;
-  padding: 4rem 0;
+  &__container {
+    padding: 4rem 0;
+  }
 
   &__group {
     gap: 10rem;
   }
 
   &__content {
+    text-align: center;
     gap: 3rem;
 
     &-list {
       display: flex;
       flex-direction: column;
+      justify-self: center;
       gap: 0.8rem;
     }
 
