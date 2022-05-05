@@ -27,7 +27,7 @@ window.addEventListener("scroll", stickyHeader);
 let testimonialContainer = new Swiper(".testimonial__container", {
   centeredSlides: true,
   slidesPerView: "auto",
-  spaceBetween: 36,
+  spaceBetween: 24,
   loop: true,
   autoplay: {
     duration: 3000,
