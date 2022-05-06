@@ -538,3 +538,29 @@ img {
     background-color: $magenta-color;
   }
 }
+
+// ===== CTA SECTION =====
+.cta {
+  &__wrapper {
+    gap: 1.5rem;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: $yellow-color;
+    border-radius: 2rem;
+  }
+
+  &__title,
+  &__text {
+    color: $white-color;
+  }
+
+  &__buttons {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__img {
+    justify-self: center;
+  }
+}
