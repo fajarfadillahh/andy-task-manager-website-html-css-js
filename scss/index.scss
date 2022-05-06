@@ -564,3 +564,54 @@ img {
     justify-self: center;
   }
 }
+
+// ===== FOOTER SECTION =====
+.footer {
+  &__container {
+    gap: 6rem;
+  }
+
+  &__group {
+    gap: 2rem;
+  }
+
+  &__data {
+    &-logo {
+      color: $black-color;
+    }
+
+    &-text {
+      color: $grey-color;
+      line-height: $leading-text;
+      margin-top: 10px;
+    }
+  }
+
+  &__content {
+    &-title {
+      font-size: 18px;
+      font-weight: $font-bold;
+      margin-bottom: 1rem;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    &-link {
+      color: $grey-color;
+
+      &:hover {
+        color: $black-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__copy {
+    text-align: center;
+    color: $grey-color;
+  }
+}
