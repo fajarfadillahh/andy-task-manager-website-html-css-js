@@ -647,8 +647,7 @@ img {
     width: 450px;
   }
 
-  .home__img,
-  .feature__content-img {
+  .home__img {
     width: 450px;
   }
 
@@ -787,5 +786,41 @@ img {
 
   .footer__group {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// ---- width 1024px -----
+@media screen and (min-width: 1024px) {
+  .home__title {
+    width: 800px;
+    font-size: 62px;
+  }
+
+  .partner {
+    &__container {
+      gap: 0;
+    }
+
+    &__group {
+      grid-template-columns: repeat(6, max-content);
+    }
+  }
+
+  .pricing__group {
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  .footer {
+    &__container {
+      gap: 8rem;
+    }
+
+    &__group {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__content {
+      justify-self: center;
+    }
   }
 }
