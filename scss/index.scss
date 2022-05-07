@@ -664,3 +664,50 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+// ---- width 767px -----
+@media screen and (min-width: 767px) {
+  .header {
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__link {
+      color: $white-color;
+      transition: $transition-400;
+
+      &.active-link {
+        color: $white-color;
+      }
+    }
+
+    &__button {
+      margin-top: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &.sticky-action {
+      .header__link {
+        color: $black-color;
+      }
+    }
+  }
+
+  .pricing__group {
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  .pricing__data-yearly,
+  .pricing__data-monthly {
+    font-size: 16px;
+  }
+}
